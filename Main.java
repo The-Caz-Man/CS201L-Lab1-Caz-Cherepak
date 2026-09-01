@@ -34,6 +34,7 @@ public class Main {
                 (!((x2 >= -10 && x2 <= 10) &&
                 (y2 >= -10 && y2 <= 10)))) {
                 System.out.println("A value entered was not valid"); 
+                input.close();
                 return;                       
             }
 
@@ -47,6 +48,7 @@ public class Main {
          }
         else {
             System.out.println("The value " + choice + " is not a valid option!");
+            input.close();
             return;
         }
         //print both points
